@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+.connection-status {
+  background-color: #1e1e1e;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  min-width: 300px;
+}
+
+.connection-status p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.connection-message {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.game-controls {
+  margin: 20px 0;
+}
+
+.join-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.join-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.join-button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+.game-area {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.game-canvas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.game-canvas {
+  border: 3px solid #4CAF50;
+  border-radius: 8px;
+  background-color: #000;
+}
+
+.game-controls-info {
+  background-color: #1e1e1e;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #444;
+}
+
+.game-controls-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .App-header h1 {
+    font-size: 2rem;
+  }
+  
+  .game-canvas {
+    max-width: 90vw;
+    height: auto;
+  }
+  
+  .connection-status {
+    min-width: 250px;
+    font-size: 0.9rem;
+  }
+}
